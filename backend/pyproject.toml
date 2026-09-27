@@ -34,5 +34,8 @@ line-length = 88
 [tool.ruff.lint]
 select = ["E", "F", "I"]
 
+[tool.ruff.lint.per-file-ignores]
+"tests/conftest.py" = ["E402"]
+
 [tool.setuptools.packages.find]
 include = ["app*"]
